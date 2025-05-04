@@ -23,9 +23,9 @@ def hash_checker():
 			vuln.append(hash)
 
 	if vuln:
-		print(f"File is vulnerable")
+		print("File is vulnerable")
 	else:
-		print(f"File is not vulnerable")
+		print("File is not vulnerable")
 
 
 
