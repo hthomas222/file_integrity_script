@@ -10,7 +10,6 @@ def hash_checker():
 	with open(file_check) as file:
 		file = file.readlines()
 
-	new_li = []
 	for i in file:
 		i = i.split(" ")
 	hash = i[0]
@@ -23,10 +22,10 @@ def hash_checker():
 		if hash in i:
 			vuln.append(hash)
 
-	if vuln == True:
-		print("File is vulnerable")
+	if vuln:
+		print(f"File is vulnerable")
 	else:
-		print("File is not vulnerable")
+		print(f"File is not vulnerable")
 
 
 
